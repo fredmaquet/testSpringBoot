@@ -26,6 +26,48 @@ public class GreetingController {
     
     @RequestMapping("/version")
     public String getVersion(){
-    	return "version 2.0 !!!";
+    	return "{\n" +
+                "\t\"idCerbere\":\"jeantest2\",\n" +
+                "\t\"nomDenomination\":\"jeanjean\",\n" +
+                "\t\"nomFamille\":\"Test\",\n" +
+                "\t\"prenom\":\"Jean\",\n" +
+                "\t\"dateNaissance\":\"31/10/2016\",\n" +
+                "\t\"email\":\"jeantest@gmail.fr\",\n" +
+                "\t\"siren\":\"0123456789\",\n" +
+                "\t\"telephone\":\"0123456789\",\n" +
+                "\t\"numInscription\":null,\n" +
+                "\t\"adresse\":{\n" +
+                "\t\t\"id\":1,\n" +
+                "\t\t\"numLibVoix\":\"1, rue du test\",\n" +
+                "\t\t\"codePostal\":\"59000\",\n" +
+                "\t\t\"ville\":\"Test City\",\n" +
+                "\t\t\"cedex\":\"\"\n" +
+                "\t},\n" +
+                "\t\"macarons\":[{\n" +
+                "\t\t\"immatriculation\":\"AA-123-AA\",\n" +
+                "\t\t\"marque\":\"Opel\",\n" +
+                "\t\t\"modele\":\"Corsa\",\n" +
+                "\t\t\"typeMacaron\":\"DEFINITIF\",\n" +
+                "\t\t\"statutMacaron\":\"EN_ATTENTE_DE_PRODUCTION\",\n" +
+                "\t\t\"numeroMacaron\":\"12345789\",\n" +
+                "\t\t\"numeroCommande\":0,\n" +
+                "\t\t\"datePremiereImmat\":\"31/10/2016\",\n" +
+                "\t\t\"dateDebutValidite\":\"31/10/2016\",\n" +
+                "\t\t\"dateFinValidite\":\"31/10/2016\"\n" +
+                "\t},\n" +
+                "\t{\n" +
+                "\t\t\"immatriculation\":\"AA-234-AA\",\n" +
+                "\t\t\"marque\":\"Renault\",\n" +
+                "\t\t\"modele\":\"Scenic\",\n" +
+                "\t\t\"typeMacaron\":\"DEFINITIF\",\n" +
+                "\t\t\"statutMacaron\":\"EN_ATTENTE_DE_PRODUCTION\",\n" +
+                "\t\t\"numeroMacaron\":\"12345789\",\n" +
+                "\t\t\"numeroCommande\":0,\n" +
+                "\t\t\"datePremiereImmat\":\"31/10/2016\",\n" +
+                "\t\t\"dateDebutValidite\":\"31/10/2016\",\n" +
+                "\t\t\"dateFinValidite\":\"31/10/2016\"\n" +
+                "\t}]\n" +
+                "}\n";
+
     }
 }
